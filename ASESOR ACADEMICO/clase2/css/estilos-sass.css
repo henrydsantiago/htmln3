@@ -1,0 +1,13 @@
+body {
+  background: purple;
+}
+
+.imagen {
+  background: orange;
+  width: 300px;
+  height: 500px;
+}
+
+.imagen img {
+  width: 20%;
+}

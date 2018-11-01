@@ -1,0 +1,62 @@
+
+$color-principal: turquoise;
+$color-texto: #333;
+$color-texto-blanco: #fff;
+$tamaño-caja: 500px;
+$padding-general: 2em; 
+
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+	font-family:sans-serif;
+}
+
+header{
+	text-align: center;
+	figure img{
+		width: 20%;
+	}
+	.contenedor{
+		padding:$padding-general;
+	}
+	nav{
+		background: $color-principal;
+		li{
+			display: inline-block;
+			background: lighten($color-principal, 20%);
+			padding: $padding-general;
+			a{
+				text-decoration: none;
+				font-size: 18px;
+				color: $color-texto;
+			}
+			&:hover{
+				background: lighten($color-principal, 30%);
+				cursor: pointer;
+			}
+		}
+	}
+}
+.galeria{
+	padding: $padding-general;
+}
+.imagen{
+	background: $color-principal;
+	width: $tamaño-caja - 200px;
+	height: $tamaño-caja;
+	padding: $padding-general - 1em;
+	color: $color-texto-blanco;
+	img{
+		width: 100%;
+		&:hover{
+			transform: scale(2);
+		}
+	}
+	&:hover{
+		background: darken($color-principal, 20%);
+	}
+	h2{
+		margin: 1em 0;
+	}
+}
