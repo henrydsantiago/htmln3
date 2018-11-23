@@ -1,0 +1,11 @@
+@mixin estilos-boton($cantidad-radio, $borde, $color-borde){
+	border-radius: $cantidad-radio;
+	border: $borde solid $color-borde;
+	padding: $padding-general - 10px;
+}
+
+@mixin colores-fondo($color){
+	@if $color == 'amarillo'{
+		background: yellow;
+	}
+}

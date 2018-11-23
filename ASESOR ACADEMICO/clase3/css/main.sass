@@ -1,0 +1,33 @@
+
+$color-principal: yellow
+$espacios: 1.5%
+
+body
+	display: flex
+	height: 768px
+	background: pink
+	justify-content: space-between
+	align-items: center
+	flex-direction: column
+
+.proyecto
+	width: 30%
+	position: relative
+	overflow: hidden
+
+	&:hover .proyecto-texto
+		transform: translateY(0%)
+
+	&-imagen
+		width: 100%
+	&-texto
+		background: $color-principal
+		padding: $espacios
+		position: absolute
+		bottom: 0
+		transform: translateY(100%)
+		transition: all .5s
+		font:
+			size: 20px
+			weight: bold
+			family: sans-serif

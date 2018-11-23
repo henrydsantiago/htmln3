@@ -1,0 +1,57 @@
+
+
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+// clase padre
+
+.boton{
+	border-radius: 30px;
+	border: 2px solid $color-input;
+	padding: $padding-general - 10px;
+}
+
+
+//@include estilos-boton(10px, 1px, green);
+
+.formulario{
+	&-registro{
+		width: 50%;
+		margin: auto;
+
+		//funciones de colores
+
+		// lighten($color-formulario, 10%)
+		// darken($color-formulario, 10%)
+
+
+
+
+		background: grayscale($color-formulario);
+		padding: $padding-general;
+	}
+	&-input{
+		@extend .boton;
+		width: 90%;
+		&-contenedor{
+			margin: $padding-general 0;
+
+			&:last-child{
+				text-align:center;
+			}
+
+			label{
+				display: block;
+				margin: $padding-general - 10px 0;
+			}
+		}
+	}
+	&-button{
+		//@extend .boton;
+
+		@include estilos-boton(10px, 1px, green);
+	}
+}

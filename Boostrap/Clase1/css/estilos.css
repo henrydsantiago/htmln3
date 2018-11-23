@@ -1,0 +1,14 @@
+#info p{
+	text-align: center;
+}
+#imagen img{
+	width: 200px;
+}
+#menu ul li{
+	display: inline-block;
+}
+#info-texto{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
