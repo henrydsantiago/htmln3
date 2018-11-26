@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Clase 2 Bootstrap</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-inverse">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a href="http://www.cadif1.com" class="navbar-brand col-md-2 col-sm-2 hidden-xs">
+						<img src="img/logo.svg" class="img-responsive">
+					</a>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<form class="navbar-form form-inline navbar-left">
+						<div class="form-group">
+							<input type="text" name="busqueda" class="form-control">
+						</div>
+						<div class="form-group">
+							<button type="button" class="btn btn-danger">Buscar</button>
+						</div>
+					</form>
+					<ul class="nav navbar-nav navbar-right">
+						<li class="active"><a href="#">Inicio</a></li>
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">Servicios<span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li class="dropdown-header">Todos los servicios</li>
+									<li><a href="#">Cursos</a></li>
+									<li><a href="#">Carreras Técnicas</a></li>
+									<li><a href="#">Asesorías</a></li>
+								</ul>
+						</li>
+						<li><a href="#">Acerca de</a></li>
+						<li><a href="#">Contacto</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<section class="registro">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<form name="frm-registro" class="formulario form-horizontal">
+						<div class="form-group">
+							<label>Nombre:</label>
+							<input type="text" name="nombre" class="form-control" placeholder="Ej: Henry, Karina, Mauricio">
+						</div>
+						<div class="form-group">
+							<label>Correo:</label>
+							<input type="email" name="correo" class="form-control" placeholder="Ej: henryuny@gmail.com">
+						</div>
+						<div class="form-group">
+							<label>Contraseña:</label>
+							<input type="password" name="clave" class="form-control" placeholder="Sin caracteres extraños">
+                        </div>
+						<div class="form-group">
+							<label>Confirmar contraseña:</label>
+							<input type="password" name="clave" class="form-control" placeholder="Sin caracteres extraños">
+						</div>
+				
+                        <div class="form-group">
+                            <div class="col-md-2">
+                                <label>Estado Civil:</label>
+                            </div>
+                            <div class="col-md-10">
+                                <select class="form-control">
+                                    <option value="">Casado</option>
+                                    <option value="">Soltero</option>
+                                    <option value="">Divorciado</option>
+                                    <option value="">Viudo</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Género:</label>
+                            <div class="radio">
+                                <label><input type="radio" name="genero" value="femenino">Femenino</label>
+                            </div>
+                            <div class="radio">
+                                <label><input type="radio" name="genero" value="masculino">Masculino</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="">Comentario</label>
+                            <textarea name="" id="" cols="30" rows="4" class="form-control"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <div class="checkbox">
+                                <label for="">
+                                    <input type="checkbox" name="politicas">Acepto las politicas de privacidad
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <button type="button" class="btn btn-success btn-block">Acceder</button>
+                        </div>
+					</form>
+                </div>
+                <div class="col-md-6">
+                    <form name="inicio-sesion" class="form-horizontal">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <span class="input-group-addon">
+                                    <i class="glyphicon glyphicon-user"></i>
+                                </span>
+                                <input type="text" name="nombre" placeholder="Ingrese su nombre" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <span class="input-group-addon">
+                                    <i class="glyphicon glyphicon-lock"></i>
+                                </span>
+                                <input type="password" name="nombre" placeholder="Ingrese su contraseña" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <button type="button" class="btn btn-success">Enviar<span class="glyphicon glyphicon-send"></span></button>
+                        </div>
+                    </form>
+                </div>
+			</div>
+		</div>
+	</section>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
