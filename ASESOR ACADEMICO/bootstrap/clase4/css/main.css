@@ -1,0 +1,40 @@
+.navbar{
+	margin-bottom: 0;
+}
+.detalles-producto{
+	background: #f2f2f2;
+	padding: 2%;
+	width: 80%;
+	margin: auto;
+	margin-top: 50px;
+}
+.detalles-producto .col-md-6:nth-child(2){
+	width: 40%;
+}
+.migas{
+	background: lightblue;
+	padding: 1% 0;
+}
+.migas li{
+	color: #333;
+	font-weight: bold;
+}
+.migas li:after{
+	content: '>';
+	padding-left: 8px;
+	color: white;
+}
+.migas li:last-child:after{
+	content: ''; 
+}
+.informacion-adicional{
+	margin-top: 50px;
+}
+.carousel-inner > .item > img{
+	height: 400px;
+	width: 100%;
+}
+.carousel-control{
+	background: none;
+	opacity: 0;
+}
